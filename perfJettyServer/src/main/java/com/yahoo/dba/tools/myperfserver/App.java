@@ -572,23 +572,7 @@ public class App {
 		System.out.println(new Date() + " Shutdown is completed.");
 	}
 
-	private void waitToShutdownSignal() {
-		while (true) {
-			// sleep 5 seconds, then check shutdown file
-			try {
-				Thread.sleep(5000);
-				if (new File(this.shutdownFile).exists()) {
-					// we are suppose to shutdown
-					System.out.println(new Date()
-							+ " Receive soft shutdown signal.");
-					break;
-				}
-			} catch (Throwable th) {
-				System.out.println(new Date() + " Receive shutdown signal.");
-				break;
-			}
-		}
-	}
+	
 
 	private void shutdown() {
 		try { // shutdown
