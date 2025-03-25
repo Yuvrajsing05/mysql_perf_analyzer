@@ -1,8 +1,4 @@
-/*
- *  Copyright 2025, Yahoo Inc.
- *  Copyrights licensed under the Apache License.
- *  See the accompanying LICENSE file for terms.
- */
+
 package com.yahoo.dba.tools.myperfserver;
 
 import junit.framework.Test;
